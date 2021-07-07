@@ -62,7 +62,7 @@ def generateData(i, resolution=5, total_time=10000, dT=10, length=500., pml_thic
             break
 
 
-    output_dir = f"out-{i:05d}"
+    output_dir = "out-{:05d}".format(i)
 
     cell_size = mp.Vector3(outer_radius + pml_thickness, 0, length + 2*pml_thickness)
     pml_layers = [mp.PML(thickness=pml_thickness)]

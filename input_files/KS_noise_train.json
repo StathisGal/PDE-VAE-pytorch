@@ -1,14 +1,11 @@
 {
-    "DATAFILE":             "data/KS_dataset.npz",
-    "OUTFOLDER":            "KS_run0",
-    "MODELLOAD":            "KS_model.pt",
+    "DATAFILE":             "data/KS_dataset_noise0.1.npz",
+    "OUTFOLDER":            "KS_noise_run0",
+    "MODELLOAD":            "KS_model_noise.pt",
 
     "cuda_device":          0,
-    "data_parallel":        false,
 
     "train":                true,
-    "restart":              false,
-    "freeze_encoder":       false,
 
     "model":                "pde1d",
     "data_dimension":       1,
@@ -37,6 +34,6 @@
     "num_workers":          2,
     "batch_size":           50,
 
-    "max_epochs":           200,
-    "save_epochs":          20
+    "max_epochs":           2000,
+    "save_epochs":          200
 }

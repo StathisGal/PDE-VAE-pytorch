@@ -431,13 +431,15 @@ def evaluate(model, s, params_filename="params.npz", rmse_filename="rmse_with_de
 
 
 if __name__ == "__main__":
+
     in_file = sys.argv[1]
     if not os.path.exists(in_file):
         raise FileNotFoundError("Input file " + in_file + " not found.")
 
     model, s = setup(in_file)
+
     if s.train:
         model = train(model, s)
         torch.save(model.state_dict(), os.path.join(s.MODELLOAD))
-    else:
-        evaluate(model, s)
+
+    evaluate(model, s)

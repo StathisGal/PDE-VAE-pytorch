@@ -1,6 +1,7 @@
 {
-    "DATAFILE":             "data/NLSE_dataset_size5000.npz",
+    "DATAFILE":             "data/NLSE_dataset.npz",
     "OUTFOLDER":            "NLSE_run0",
+    "MODELLOAD":            "NLSE_model.pt",
 
     "cuda_device":          0,
 

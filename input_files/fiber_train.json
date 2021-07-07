@@ -1,6 +1,7 @@
 {
-    "DATAFILE":             "data/fiber_dataset_size200.npz",
+    "DATAFILE":             "data/fiber_dataset.npz",
     "OUTFOLDER":            "fiber_run0",
+    "MODELLOAD":            "fiber_model.pt",
 
     "cuda_device":          0,
 
